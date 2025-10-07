@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+header{
+    background-color: rgb(230, 224, 248);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    padding: 20px;
+}
+header h1{
+    font-family: "Lato", sans-serif;
+    color:rgb(106, 76, 147);
+    font-weight: 600;
+}
+header,nav,nav>ul{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    list-style:none;
+}
+nav>ul>li{
+    margin: 0 20px 0 20px ;
+}
+nav>ul>li:hover{
+    text-decoration: underline;
+
+}
+nav>ul>li>a{
+    text-decoration: none;
+}
+
+#Hero>h3 ,#About> h3 ,#Projects>h3 ,#skills>h2,#Contact>h2{
+    color:rgb(106, 76, 147);
+    text-align: center;
+    font-size: 26px;
+    margin:20px 0 20px 0 ;
+    font-family: "Instrument Serif", serif;
+}
+#Hero p{
+    text-align: center;
+    font-family: "Playwrite DE SAS", cursive;
+}
+
+#About span {
+   display: flex;
+   justify-content: center;
+   margin: 10px 0 20px 0
+}
+#About p{
+    font-family: "Instrument Serif", serif;
+    padding: 20px ;
+    text-align: center;
+    font-size: 23px;
+}
+#Projects ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5% 0 0.5%;
+    margin-bottom: 30px;
+
+}
+#Projects ul li h4{
+    padding: 10px;
+    font-size: 23px;
+}
+
+#Projects ul li{
+    width:32% ;
+    list-style: none;
+    height: 100px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#skills table{
+    text-align: center;
+    width: 60%;
+    margin: 0 20% 0 20%;
+    border:rgb(106, 76, 147) solid 1px ;
+    margin-bottom:40px ;
+
+}
+#skills table thead>tr{
+    height: 30px;
+}
+#skills table tbody>tr{
+    height: 30px;
+    background-color:rgb(196, 166, 237);
+    color:white
+}
+#skills table thead{
+    background-color:rgb(106, 76, 147)  ;
+    color: white;
+
+}
+
+#Contact form{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+  section#Contact {
+      max-width: 600px;
+      margin: 60px auto;
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(106, 76, 147, 0.2);
+      border-top: 4px solid rgb(106, 76, 147);
+    }
+
+    section #Contact h2 {
+      text-align: center;
+      color: rgb(106, 76, 147);
+      margin-bottom: 25px;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 12px 10px;
+      vertical-align: top;
+      color: #333;
+      font-weight: 500;
+    }
+
+    tr {
+      border-bottom: 1px solid rgb(196, 166, 237); /* light purple underline */
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: rgb(106, 76, 147);
+      font-weight: 600;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid rgb(166, 136, 207);
+      border-radius: 8px;
+      outline: none;
+      font-size: 15px;
+      background-color: #faf8fc;
+      transition: all 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      border-color: rgb(106, 76, 147);
+      box-shadow: 0 0 5px rgba(106, 76, 147, 0.3);
+      background-color: #fff;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: rgb(106, 76, 147);
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: rgb(136, 106, 177);
+    }
+
+ #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: rgb(106, 76, 147);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(106, 76, 147, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    #backToTop:hover {
+      background-color: rgb(136, 106, 177);
+      transform: translateY(-4px);
+      box-shadow: 0 6px 14px rgba(106, 76, 147, 0.4);
+    }
+ footer {
+      background-color: rgb(106, 76, 147);
+      color: #fff;
+      text-align: center;
+      padding: 25px 10px;
+      font-family: "Poppins", sans-serif;
+      border-top: 4px solid rgb(166, 136, 207);
+      box-shadow: 0 -3px 10px rgba(106, 76, 147, 0.2);
+    }
+
+    footer p {
+      margin: 10px 0;
+      font-size: 15px;
+    }
+
+    footer a {
+      color: rgb(196, 166, 237);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #fff;
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    }
+
+    footer br {
+      margin-bottom: 5px;
+    }
+
