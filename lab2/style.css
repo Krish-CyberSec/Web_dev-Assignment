@@ -93,6 +93,9 @@ nav>ul>li>a{
     background-color:rgb(196, 166, 237);
     color:white
 }
+#skills table tbody>tr>td{
+  border-right: 1px solid white;
+}
 #skills table thead{
     background-color:rgb(106, 76, 147)  ;
     color: white;
@@ -233,5 +236,6 @@ nav>ul>li>a{
     footer br {
       margin-bottom: 5px;
     }
+
 
 
