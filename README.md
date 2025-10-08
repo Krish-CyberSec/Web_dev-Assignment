@@ -4,5 +4,6 @@
 
 
 ## LAB 02 
-<img width="1755" height="2240" alt="image" src="https://github.com/user-attachments/assets/ba7c5729-1fe0-4c4d-b8b7-8a4d3f974a68" />
+
+<img width="1755" height="2240" alt="image" src="https://github.com/user-attachments/assets/a7e74604-2ad7-4a32-a470-fc28f781e694" />
 
