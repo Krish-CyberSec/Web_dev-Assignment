@@ -132,12 +132,12 @@ nav>ul>li>a{
     td {
       padding: 12px 10px;
       vertical-align: top;
-      color: #333;
+      color: #fff;
       font-weight: 500;
     }
 
     tr {
-      border-bottom: 1px solid rgb(196, 166, 237); /* light purple underline */
+      border-bottom: 1px solid white; /* light purple underline */
     }
 
     label {
@@ -233,4 +233,5 @@ nav>ul>li>a{
     footer br {
       margin-bottom: 5px;
     }
+
 
