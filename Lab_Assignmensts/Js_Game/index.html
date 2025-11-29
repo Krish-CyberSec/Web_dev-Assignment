@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 40vw;
+            height: 20vh;
+            position: fixed;
+            top: 30vh;
+            left: 30vw;
+            background-color: coral;
+            font-weight: 500;
+            color: whitesmoke;
+            box-sizing: border-box;
+            box-shadow: -5px 5px 10px 1px lightcoral;
+            border: 0;
+            border-radius: 8px; 
+        }
+        marquee{
+            color: red;
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+       
+    </style>
+</head>
+<body>
+    <button onclick="Quiz()">
+        Run Quiz
+    </button>
+    <marquee behavior="" direction="left"></marquee>
+    <script>
+        // Making the quesiton array 
+        const QuizQuestion=[
+            { question: "What is the capital of Japan?", answer: "tokyo" },
+            { question: "What planet is known as the Red Planet?", answer: "mars" },
+            { question: "Who wrote the play 'Romeo and Juliet'?", answer: "william shakespeare" },
+            { question: "What gas do plants breathe in that humans breathe out?", answer: "carbon dioxide" },
+            { question: "How many continents are there on Earth?", answer: "7" },
+            { question: "What is the largest mammal in the world?", answer: "blue whale" },
+            { question: "What do bees produce?", answer: "honey" },
+            { question: "What is the boiling point of water in Celsius?", answer: "100" },
+            { question: "What is the fastest land animal?", answer: "cheetah" },
+            { question: "What language is primarily spoken in Brazil?", answer: "portuguese" }
+        ]
+
+        //Making the function to give score and ask quesiton to user 
+        function runQuiz() {
+        let score = 0;
+
+        for (let i = 0; i < QuizQuestion.length; i++) {
+
+            let ans = prompt(QuizQuestion[i].question);
+
+            // If user clicks cancel, ans = null → stop the quiz
+            if (ans === null) {
+                alert("Quiz cancelled.");
+                return;
+            }
+
+        
+            ans = ans.trim().toLowerCase();
+
+            if (ans === "") {
+                alert("Enter an answer first!");
+                i--;  // ask the same question again
+                continue;
+            }
+
+            if (ans === QuizQuestion[i].answer) {
+                score++;
+                alert("Correct answer! Your score is: " + score);
+            } else {
+                score--;
+                alert("Wrong answer! Your score is: " + score);
+            }
+        }
+
+        alert("Your final score is: " + score);
+        document.getElementsByTagName("marquee")[0].innerText="Your Final score is : "+score
+}
+
+function Quiz(){
+    runQuiz()
+}
+        
+    </script>
+</body>
+</html>
